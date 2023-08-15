@@ -164,16 +164,12 @@ a:active {
 	padding: var(--PADDING-TB) var(--PADDING-SIDE);
 	background-color: transparent;
 	color: var(--HIGHLIGH-COLOR);
-	text-shadow: 3px 3px 3px orange;
-	/* border-left: 5px solid var(--BORDER-COLOR);
-	border-right: 5px solid var(--BORDER-COLOR); */
-	
+	text-shadow: 3px 3px 3px orange;	
 }
 
 .header__location {
 	background-color: maroon;
 	border: 1px solid black;
-	/* border: var(--BORDER); */
 	border-radius: var(--BORDER-RADIUS);
 	font-weight: bold;
 	padding: 0px 5px;
@@ -228,6 +224,7 @@ article, .article__internal {
 	background: transparent;
 	flex-flow: row wrap;
 	justify-content: center;
+	align-content: flex-start;
 	border: none;
 	box-shadow: none;
 }

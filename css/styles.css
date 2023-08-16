@@ -229,6 +229,12 @@ article, .article__internal {
 	box-shadow: none;
 }
 
+.time {
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: var(--BOX-SHADOW);
+}
+
 @media only screen and (max-width: 600px) {
 	iframe {
 		max-width: 300px;

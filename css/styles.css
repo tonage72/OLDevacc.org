@@ -109,6 +109,7 @@ a:any-link {
 }
 
 a:hover, a:focus-visible {
+	text-shadow: var(--BOX-SHADOW);
 	color: var(--LINK-HOVER);
 }
 

@@ -150,7 +150,7 @@ nav ul {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	width: 100%;
 }

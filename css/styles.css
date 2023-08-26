@@ -257,7 +257,21 @@ article, .article__internal {
 	text-shadow: var(--BOX-SHADOW);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
+	iframe {
+		max-width: 450px;
+		max-height: 248px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	iframe {
+		max-width: 375px;
+		max-height: 212px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
 	iframe {
 		max-width: 300px;
 		max-height: 165px;

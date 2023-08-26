@@ -16,14 +16,14 @@ img {
 	/* FONTS */
 	--FF: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	--FF-HEADINGS: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	--FS: clamp(1.1rem, 3vw, 1.6rem);
-	--FS-HEADER: clamp(20.25px, 6.2vw, 50px);
+	--FS: 18px;
+	--FS-HEADER: clamp(1rem, 6vw, 2.7rem);
 	/* COLORS */
 	--LINK-COLOR: white;
 	--LINK-HOVER: yellow;
 	--LINK-ACTIVE: red;
 	--BGCOLOR-FADE: rgb(157, 149, 220);
-	--BGCOLOR: rgb(3, 6, 53);
+	--BGCOLOR: rgb(3, 6.1, 53);
 	--BGCOLOR-GENERAL: black;
 	--BGCOLOR-GENERAL-FADE: rgb(91, 0, 91);
 	--BGIMAGE: radial-gradient(var(--BGCOLOR), var(--BGCOLOR-FADE));
@@ -68,7 +68,6 @@ img {
 }
 
 html {
-	scroll-behavior: smooth;
 	font-size: var(--FS);
 	font-family: var(--FF);
 	background-color: var(--BGCOLOR);
@@ -131,8 +130,11 @@ header {
 }
 
 header h1 {
+	border: 0;
+	justify-content: center;
+	display: flex;
+	flex: row wrap;
 	text-align: center;
-	border-bottom: 0;
 	font-size: var(--FS-HEADER);
 	font-style: italic;
 	background-color: transparent;
@@ -148,12 +150,13 @@ nav ul {
 	list-style-type: none;
 	display: flex;
 	align-items: center;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
 	width: 100%;
 }
 
 nav ul li {
+	font-size: clamp(16px, 3vw, 23px);
 	padding: 5px 6px;
 }
 
@@ -167,7 +170,7 @@ nav a::before {
 	left: 0;
 	right: 0;
 	transform: scale(0, 1);
-	transition: transform ease-in-out 300ms;
+	transition: transform ease-in-out 200ms;
 }
 
 nav a:hover::before {
@@ -175,27 +178,31 @@ nav a:hover::before {
 }
 
 nav a:hover {
-	color: black;
+	color: white;
 }
 
 .header__miscinfo {
+	font-size: clamp(10px, 4vw, 23px);
 	display: flex;
 	justify-content: center;
 	align-content: top;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 0px 10px;
 	padding: var(--PADDING-TB) var(--PADDING-SIDE);
 	background-color: transparent;
 	color: var(--HIGHLIGH-COLOR);
-	text-shadow: 3px 3px 3px orange;	
+	text-shadow: 3px 3px 3px orange;
 }
 
 .header__sociallinks{
 	display: flex;
-	gap: 5px;
-	flex-wrap: nowrap;
-	flex-flow: row;
+	flex: row nowrap;
+	gap: 3px;
+}
+
+.header__sociallinks img {
+	width: clamp(10px, 6.2vw, 43px);
 }
 
 .nav__location {

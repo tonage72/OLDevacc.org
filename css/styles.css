@@ -16,8 +16,8 @@ img {
 	/* FONTS */
 	--FF: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	--FF-HEADINGS: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	--FS: clamp(1rem, 2.2vh, 1.4rem);
-	--FS-HEADER: clamp(1.4rem, 2.2vh, 1.4rem);
+	--FS: clamp(1.1rem, 3vw, 1.6rem);
+	--FS-HEADER: clamp(20.25px, 6.2vw, 50px);
 	/* COLORS */
 	--LINK-COLOR: white;
 	--LINK-HOVER: yellow;
@@ -79,18 +79,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: none;
-	flex-grow: 1;
 	color: var(--FONT-COLOR);
 	min-height: 100vh;
 	max-width: 800px;
 	margin: 0 auto;
-	gap: 15px;
+	gap: 0.5rem;
 	align-items: center;
 }
 
 h1, h2, h3 {
 	font-family: var(--FF-HEADINGS);
-	letter-spacing: 0.1em;
+	letter-spacing: 0rem;
 }
 
 h2, h3 {
@@ -123,7 +122,7 @@ header {
 	width: 100%;
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 0;
 	border: var(--BORDER);
 	background-image: var(--BGIMAGE-GENERAL);
 	border-bottom-left-radius: var(--BORDER-RADIUS);
@@ -138,7 +137,6 @@ header h1 {
 	font-style: italic;
 	background-color: transparent;
 	color: var(--HEADER-COLOR);
-	padding: 5px 0 0 0;
 	text-shadow: 3px 3px 5px white;
 }
 

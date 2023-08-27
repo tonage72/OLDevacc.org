@@ -71,15 +71,11 @@ html {
 }
 
 body {
-	/* display: flex; */
-	/* flex-direction: column; */
 	background: none;
 	color: var(--FONT-COLOR);
 	min-height: 100vh;
 	max-width: 800px;
 	margin: 0px auto;
-	/* gap: 0.5rem; */
-	/* align-items: center; */
 }
 
 h1, h2, h3 {
@@ -128,8 +124,6 @@ header {
 header h1 {
 	border: 0;
 	justify-content: center;
-	/* display: flex; */
-	/* flex: row wrap; */
 	text-align: center;
 	font-size: var(--FS-HEADER);
 	font-style: italic;
@@ -228,8 +222,6 @@ article {
 	margin-top: 10px;
 	width: 100%;
 	border: var(--BORDER);
-	/* display: flex; */
-	/* flex: column wrap; */
 	background-color: var(--ARTICLE-BGCOLOR);
 	background-image: radial-gradient(black, rgb(91, 0, 91));
 	color: var(--ARTICLE-COLOR);
@@ -239,9 +231,11 @@ article {
 }
 
 .flexrow {
+	justify-content: center;
+	gap: .5rem;
+	flex-basis: 100%;
 	display: flex;
 	flex: row wrap;
-	justify-content: space-evenly;
 }
 
 .time {

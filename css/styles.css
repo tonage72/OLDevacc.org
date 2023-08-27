@@ -176,8 +176,7 @@ nav a:hover {
 	display: flex;
 	justify-content: center;
 	align-content: top;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex: row wrap;
 	gap: 0px 10px;
 	padding: var(--PADDING-TB) var(--PADDING-SIDE);
 	background-color: transparent;
@@ -244,23 +243,30 @@ article {
 	text-shadow: var(--BOX-SHADOW);
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 613px) {
 	iframe {
 		max-width: 450px;
 		max-height: 248px;
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 485px) {
 	iframe {
 		max-width: 375px;
 		max-height: 212px;
 	}
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
 	iframe {
 		max-width: 300px;
 		max-height: 165px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	iframe {
+		max-width: 200px;
+		max-height: 110px;
 	}
 }

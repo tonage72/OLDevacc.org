@@ -63,10 +63,6 @@ img {
 	text-align: center;
 }
 
-.itemscenter {
-	align-items: center;
-}
-
 html {
 	font-size: var(--FS);
 	font-family: var(--FF);
@@ -75,15 +71,15 @@ html {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+	/* display: flex; */
+	/* flex-direction: column; */
 	background: none;
 	color: var(--FONT-COLOR);
 	min-height: 100vh;
 	max-width: 800px;
-	margin: 0 auto;
-	gap: 0.5rem;
-	align-items: center;
+	margin: 0px auto;
+	/* gap: 0.5rem; */
+	/* align-items: center; */
 }
 
 h1, h2, h3 {
@@ -132,8 +128,8 @@ header {
 header h1 {
 	border: 0;
 	justify-content: center;
-	display: flex;
-	flex: row wrap;
+	/* display: flex; */
+	/* flex: row wrap; */
 	text-align: center;
 	font-size: var(--FS-HEADER);
 	font-style: italic;
@@ -224,31 +220,28 @@ figure img {
 	box-shadow: var(--BOX-SHADOW);
 }
 
-article, .article__internal {
+figure {
+	padding-top: .5rem;
+}
+
+article {
+	margin-top: 10px;
 	width: 100%;
 	border: var(--BORDER);
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	margin: 0px;
+	/* display: flex; */
+	/* flex: column wrap; */
 	background-color: var(--ARTICLE-BGCOLOR);
 	background-image: radial-gradient(black, rgb(91, 0, 91));
 	color: var(--ARTICLE-COLOR);
 	border-radius: var(--BORDER-RADIUS);
 	box-shadow: var(--BOX-SHADOW);
-	padding: 10px;
+	padding: .5rem;
 }
 
-.article__internal {
-	gap: 5px;
-	text-align: left;
+.flexrow {
 	display: flex;
-	background: transparent;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: flex-start;
-	border: none;
-	box-shadow: none;
+	flex: row wrap;
+	justify-content: space-evenly;
 }
 
 .time {

@@ -96,11 +96,10 @@ p {
 a:any-link {
 	text-decoration: none;
 	color: var(--LINK-COLOR);
-	text-shadow: 4px 4px 1px black;
+	text-shadow: var(--BOX-SHADOW);
 }
 
 a:hover, a:focus-visible {
-	text-shadow: var(--BOX-SHADOW);
 	color: var(--LINK-HOVER);
 }
 
@@ -132,40 +131,44 @@ header h1 {
 
 nav ul {
 	text-transform: uppercase;
-	border-radius: var(--BORDER-RADIUS);
-	background-color: var(--NAV-BGCOLOR);
+	background-color: none;
 	list-style-type: none;
 	display: flex;
-	align-items: center;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content:space-evenly;
 	width: 100%;
 }
 
-nav ul li {
-	font-size: clamp(.5rem, 3.35vw, 1.5rem);
-	padding: 5px 6px;
+nav ul li, .nav__location {
+	color: yellow;
+	padding: .8em;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin: .3em;
+	box-shadow: var(--BOX-SHADOW);
+	background-color: rgb(0, 0, 0);
+	width: clamp(7em, 15vw, 120px);
+	height: clamp(2em, 8vw, 3em);
+	border-radius: 30% 0 30% 0;
+	font-size: clamp(.5rem, 2.5vw, 1.10rem);
 }
 
-nav a::before {
-	content: '';
-	display: block;
-	height: 4px;
-	background: black;
-	position: relative;
-	top: 0em;
-	left: 0;
-	right: 0;
-	transform: scale(0, 1);
-	transition: transform ease-in-out 200ms;
+.nav__location {
+	background-image: radial-gradient(black, rgb(100, 100, 0));
+	padding-bottom: .6em;
+	text-shadow: 3px 3px 3px white;
 }
 
-nav a:hover::before {
-	transform: scale(1,1);
+nav a:any-link {
+	text-shadow: 3px 3px 3px yellow;
+	transition: rotate 750ms ease-in-out;
 }
 
-nav a:hover {
+nav a:hover, a:focus-visible {
 	color: white;
+	rotate: -30deg;
+	transition: rotate 250ms ease-in-out;
 }
 
 .header__miscinfo {
@@ -189,13 +192,6 @@ nav a:hover {
 
 .header__sociallinks img {
 	width: clamp(10px, 6.2vw, 43px);
-}
-
-.nav__location {
-	background-color: rgb(37, 0, 37);
-	border-radius: var(--BORDER-RADIUS);
-	color: var(--HIGHLIGH-COLOR);
-	box-shadow: inset 0px 0px 7px white;
 }
 
 .topic {

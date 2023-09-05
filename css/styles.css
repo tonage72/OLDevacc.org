@@ -141,12 +141,10 @@ nav ul {
 
 nav ul li, .nav__location {
 	color: yellow;
-	padding: .8em;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
-	margin: .3em;
-	box-shadow: var(--BOX-SHADOW);
+	border: 3px solid rgb(144, 132, 145);
 	background-color: rgb(0, 0, 0);
 	width: clamp(7em, 15vw, 120px);
 	height: clamp(2em, 8vw, 3em);
@@ -155,8 +153,8 @@ nav ul li, .nav__location {
 }
 
 .nav__location {
-	background-image: radial-gradient(black, rgb(100, 100, 0));
-	padding-bottom: .6em;
+	color: white;
+	background-image: radial-gradient(black, rgb(129, 156, 8));
 	text-shadow: 3px 3px 3px white;
 }
 

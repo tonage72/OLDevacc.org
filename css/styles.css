@@ -65,6 +65,7 @@ img {
 }
 
 html {
+	scrollbar-gutter: stable;
 	font-size: var(--FS);
 	font-family: var(--FF);
 	background-color: var(--BGCOLOR);

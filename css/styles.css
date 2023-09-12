@@ -135,6 +135,8 @@ nav ul {
 	list-style-type: none;
 	display: flex;
 	flex-flow: row wrap;
+	gap: 2px;
+	margin: 0.3em 0;
 	justify-content:space-evenly;
 	width: 100%;
 }
@@ -146,8 +148,8 @@ nav ul li, .nav__location {
 	justify-content: center;
 	border: .2em solid rgb(144, 132, 145);
 	background-color: rgb(0, 0, 0);
-	width: clamp(7em, 15vw, 120px);
-	height: clamp(2em, 8vw, 3em);
+	width: 5.5em;
+	height: 2.5em;
 	border-radius: 30% 0 30% 0;
 	font-size: clamp(.5rem, 2.5vw, 1.10rem);
 }

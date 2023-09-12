@@ -113,7 +113,6 @@ a:active {
 header {
 	width: 100%;
 	position: sticky;
-	max-width: 800px;
 	top: 0;
 	z-index: 0;
 	border: var(--BORDER);
